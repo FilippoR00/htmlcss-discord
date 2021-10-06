@@ -2,17 +2,176 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.body{
-    font-family: Helvetica, Arial, sans-serif;
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* header  */
+header{
+    background-color: #255ee9;
+    height: 90px;
+    font-size: 18.5px;
+    line-height: 90px;
+}
+
+#logo{
+    width: 25%;
+    float: left;
+}
+
+#logo img{
+    width: 140px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+nav{
+    width: 55%;
+    float: left;
+    text-align: center;
+}
+
+header li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 45px;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+}
+
+header li:hover{
+    text-decoration: underline;
+}
+
+.login{
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.login .button{
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 16px;
+}
+
+.button{
+    text-decoration: none;
+}
+
+.login .button:hover{
+    color: #5865f2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 /* jumbo */
 
+.jumbotron{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    height: 625px;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron h1{
+    font-size: 65px;
+    padding-top: 120px;
+}
+
+.jumbotron p{
+    width: 62%;
+    font-size: 23px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    line-height: 38px;
+}
+
+.jumbotron .button{
+    padding: 22px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.jumbotron .button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.jumbotron .button.white:hover{
+    color: #5865f2;
+}
+
+.fas{
+    margin-right: 15px;
+}
+
+.white{
+    background-color: white;
+    color: black;
+    margin-right: 30px;
+}
+
+.black{
+    background-color: #232728;
+    color: white;
+}
+
 /* main  */
+
+main img{
+    float: left;
+    width: 55%;
+}
+
+main .text{
+    float: left;
+    width: 45%;
+}
+
+#first{
+    height: 600px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+main h1{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+main p{
+    font-size: 24px;
+}
+
+main #first .text{
+    width: 30%;
+    position: relative;
+    top: 40px;
+    left: 150px;
+}
+
+.second{
+    height: 800px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
 
 /* footer  */
 
@@ -21,4 +180,5 @@
 
 
 /* *** debug *** */
+
 

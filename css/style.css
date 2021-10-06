@@ -87,6 +87,7 @@ header li:hover{
     height: 625px;
     text-align: center;
     color: white;
+    margin-bottom: 130px;
 }
 
 .jumbotron h1{
@@ -133,22 +134,24 @@ header li:hover{
     color: white;
 }
 
+.violet{
+    background-color: #8fa1e1;
+    color: white;
+}
+
 /* main  */
 
 main img{
-    float: left;
+    display: inline-block;
     width: 55%;
 }
 
-main .text{
-    float: left;
-    width: 45%;
-}
-
-#first{
-    height: 600px;
-    width: 100%;
-    margin-top: 100px;
+main .text-first{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    top: 30px;
+    left: 150px;
 }
 
 main h1{
@@ -160,17 +163,77 @@ main p{
     font-size: 24px;
 }
 
-main #first .text{
-    width: 30%;
-    position: relative;
-    top: 40px;
-    left: 150px;
+.background{
+    background-color: #f6f6f6;
+    margin-top: -10px;
+}
+
+main .text-second{
+    display: inline-block;
+    width: 32%;
+    position: absolute;
+    top: 50px;
+
 }
 
 .second{
-    height: 800px;
+    position: relative;
+    height: 500px;
+}
+
+.second img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.third{
+    margin-top: -100px;
+    position: relative;
+}
+
+.text-third{
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+
+.fourth{
+    text-align: center;
+    height: 1350px;
+}
+
+.fourth p{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fourth .image4{
     width: 100%;
-    background-color: #f6f6f6;
+}
+
+main .button.violet{
+    padding: 20px 30px;
+    border-radius: 40px;
+    width: 300px;
+    font-size: 22px;
+}
+
+main .button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.stars{
+    width: 50%;
+}
+
+main h2{
+    font-size: 35px;
+    margin-bottom: 50px;
 }
 
 /* footer  */
